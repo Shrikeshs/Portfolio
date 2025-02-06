@@ -29,9 +29,9 @@
             </div>
             <div class="menu-links">
                 <li><a href = "#about" onclick="toggleMenu()">About</li>
-                    <li ><a href = "#experience" onclick="toggleMenu()">Experience</li>
-                    <li><a href = "#projects" onclick="toggleMenu()">Project</li>
-                    <li><a href = "#contact" onclick="toggleMenu()">Contact</li>
+                    <li ><a href = "#experience" onclick="toggleMenu()"></a>Experience</li>
+                    <li><a href = "#projects" onclick="toggleMenu()"></a>Project</li>
+                    <li><a href = "#contact" onclick="toggleMenu()"></a>Contact</li>
         
             </div>
         </div>
@@ -63,6 +63,61 @@
                 onclick="location.href = 'https://github.com/Shrikeshs'"/>
             </div>
         </div>
+    </section>
+    <section id="about">
+        <p class="section__text_p1">Get to know More</p>
+        <h1 class="title">About me</h1>
+        <div class = "section-container">
+            <div class ="section__pic-container">
+                <img class = " about-pic" 
+                src="./assets/about-pic.png" 
+                alt="Alternate"/>
+            </div>
+            <div class ="about-details-container">
+                <div class="about-containers">
+                    <div class ="details-container">
+                        <img class ="icon" src="./assets/experience.png" alt="Experience"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+years<br/>Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img class ="icon" src="./assets/education.png" alt="Education"/>
+                        <h3>Education</h3>
+                        <p>Bsc. Inforation Science<br/>Msc. Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa saepe. Eos quae facilis, architecto quos quisquam ducimus maiores dignissimos modi ipsa, voluptates eum inventore
+                         esse eligendi illum harum unde?</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="./assets/arrow.png" alt="sad" class = "icon arrow"
+         onclick="location.href='./experience'">
+    </section>
+    <section id="experience">
+        <p class=""section__text_p1></p>
+        <h1 class = " title"> Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark" 
+                            class="icon">
+                              
+                        <div><h3>HTML</h3>
+                            <p>Experienced</p></div>
+                        </article>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <script src="script.js"></script>
 </body>
