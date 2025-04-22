@@ -271,7 +271,7 @@ color: white;
 
 .arrow {
     position: absolute;
-    right: -5rem;
+    right: -2rem;
     bottom: 2.5rem;
 }
 
@@ -289,7 +289,12 @@ color: white;
     gap: 4rem;
     height: 80%;
 }
-
+.section__pic-container-1 img{
+    border-radius: 60%;
+    height: 90%;
+    width: 90%;
+    object-fit: cover; 
+}
 .section__pic-container {
     height: 400px;
     width: 400px;
@@ -310,6 +315,15 @@ color: white;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
+
+.experience-sub-title-1 {
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    margin-top:2rem ;
+}
+
 
 .experience-detials-container {
     display: flex;
