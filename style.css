@@ -268,12 +268,12 @@ color: white;
     border-radius: 2rem;
 
 }
-
+/* 
 .arrow {
     position: absolute;
     right: -2rem;
     bottom: 2.5rem;
-}
+} */
 
 .details-container {
     padding: 1.5rem;
@@ -429,4 +429,34 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* === INFINITE SCROLLING BACKGROUND === */
+@import url('https://fonts.googleapis.com/css?family=Exo:100');
+
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  animation: bg-scrolling-reverse 0.92s infinite linear;
+}
+
+/* Optional: Text overlay */
+body::before {
+
+  font-family: 'Exo', sans-serif;
+  font-size: 8rem;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animation keyframes */
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
 }
